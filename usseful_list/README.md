@@ -53,8 +53,9 @@ modified+git add = staged
 ```mermaid
 graph LR;
   untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
+  staged    -- "git commit" --> tracked/comitted;
+  staged    -- "изменения" --> modified;
+  modified  -- "git add"   --> staged;
+  tracked   -- "изменения" --> modified
 
-%% стрелка без текста для примера: 
-  untracked  --> Staged;
 ``` 
