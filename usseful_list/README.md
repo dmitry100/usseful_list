@@ -56,6 +56,6 @@ graph LR;
   staged    -- "git commit" --> tracked/comitted;
   staged    -- "изменения" --> modified;
   modified  -- "git add"   --> staged;
-  tracked   -- "изменения" --> modified
+  tracked/comitted -- "изменения" --> modified
 
 ``` 
